@@ -1,12 +1,14 @@
-
 " Fast scrool
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 
-let g:pymode_lint_ignore = "E501,C0110,C0111"
-let g:pymode_lint_ignore = "E501,C0110,C0111,W191,W0312,E711,E126,W0403,E126"
+let g:pymode_lint_ignore = "E501,C0110,C0111,W191,W0312,E711,E126,W0403,E126,D101,D102,D103,D100,D205,D400,D202"
 let g:pymode_lint_checker = "pylint,pep8,pyflakes,mccabe"
 
 
 au BufNewFile,BufRead *.py setl colorcolumn=80,99
+
+set tpm=100
+
+" let g:pymode_python = 'python3'

@@ -33,9 +33,6 @@ cd ~; git clone  https://github.com/klen/.vim.git .vim
 cd ~/.vim && git submodule init && git submodule update
 echo "source ~/.vim/rc.vim" > ~/.vimrc
 
-sudo mkdir /var/www
-sudo chown niko:niko -R /var/www/
-
 
 #VIM
 #source ~/.vim/rc.vim
