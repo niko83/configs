@@ -35,6 +35,7 @@ cd ~/.vim && git submodule init && git submodule update
 echo "source ~/.vim/rc.vim" > ~/.vimrc
 
 
+
 #VIM
 #source ~/.vim/rc.vim
 #
