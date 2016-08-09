@@ -30,9 +30,9 @@ git config --global user.name ""
 git config --global core.editor vim
 
 sudo apt-get install exuberant-ctags nodejs
-cd ~; git clone  https://github.com/klen/.vim.git .vim
+cd ~; git clone  https://github.com/niko83/.vim.git .vim
 cd ~/.vim && git submodule init && git submodule update
-echo "source ~/.vim/rc.vim" > ~/.vimrc
+ln -s ~/projects/configs/.vim_local ~/.vimrc
 
 
 
@@ -69,6 +69,8 @@ echo "source ~/.vim/rc.vim" > ~/.vimrc
 
 
 
+pip install --upgrade pip
+pip install setuptools
 sudo pip install virtualenvwrapper
 echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
@@ -115,7 +117,6 @@ transaction-isolation = READ-COMMITTED
 default-time-zone = '+00:00'
 
 
-echo "export HISTSIZE=10000" >> ~/.bashrc
 USEFUL
 ======
 git show remote origin
