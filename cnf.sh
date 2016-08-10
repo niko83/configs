@@ -11,7 +11,10 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo ap
 
 sudo apt-get update;
 sudo apt-get upgrade;
-sudo apt-get install vim git tree colordiff sysstat ack-grep htop skype subversion mysql-server memcached rabbitmq-server libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev build-essential mysql-server python-mysqldb libmysqlclient-dev python-virtualenv python-pip postgresql-9.4 postgresql-contrib terminator libpq-dev apache2-utils curl redis-server 
+sudo apt-get install vim git tree colordiff sysstat ack-grep htop skype subversion mysql-server memcached rabbitmq-server \
+    libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev build-essential mysql-server python-mysqldb \
+    libmysqlclient-dev python-virtualenv python-pip postgresql-9.4 postgresql-contrib terminator \
+    libpq-dev apache2-utils curl redis-server libxml2-dev  libxslt1-dev
 sudo apt-get install gfortran libblas-dev liblapack-dev python-numpy python-scipy python-matplotlib libxft-dev 
 sudo apt-get install apache2 php5 php5-mysql php5-xdebug php5-curl php5-memcache php5-mongo
 sudo apt-get nginx-full geoip-database
@@ -32,7 +35,7 @@ git config --global core.editor vim
 sudo apt-get install exuberant-ctags nodejs
 cd ~; git clone  https://github.com/niko83/.vim.git .vim
 cd ~/.vim && git submodule init && git submodule update
-ln -s ~/projects/configs/.vim_local ~/.vimrc
+ln -s ~/projects/configs/.vimrc ~/.vim_local
 
 
 
@@ -70,7 +73,7 @@ ln -s ~/projects/configs/.vim_local ~/.vimrc
 
 
 pip install --upgrade pip
-pip install setuptools
+pip install setuptools virtualenv -U
 sudo pip install virtualenvwrapper
 echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
