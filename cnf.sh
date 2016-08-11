@@ -12,7 +12,7 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo ap
 sudo apt-get update;
 sudo apt-get upgrade;
 sudo apt-get install vim git tree colordiff sysstat ack-grep htop skype subversion mysql-server memcached rabbitmq-server \
-    libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev build-essential mysql-server python-mysqldb \
+    libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev python3-dev build-essential mysql-server python-mysqldb \
     libmysqlclient-dev python-virtualenv python-pip postgresql-9.4 postgresql-contrib terminator \
     libpq-dev apache2-utils curl redis-server libxml2-dev  libxslt1-dev
 sudo apt-get install gfortran libblas-dev liblapack-dev python-numpy python-scipy python-matplotlib libxft-dev 

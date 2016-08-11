@@ -20,5 +20,3 @@ let NERDTreeIgnore=['\~$', '\.AppleDouble$', '\.beam$',
 au BufNewFile,BufRead *.py setl colorcolumn=80,99
 
 set tpm=100
-
-" let g:pymode_python = 'python3'
