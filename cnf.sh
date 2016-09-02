@@ -1,26 +1,26 @@
 #PRE INSTALL
+sudo apt-get install -y vim git curl;
 
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
-sudo apt-get install curl
 wget -qO- https://get.docker.com/ | sh
 
 sudo add-apt-repository ppa:fkrull/deadsnakes
 
 wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 
-sudo apt-get update;
-sudo apt-get upgrade;
-sudo apt-get install vim git tree colordiff sysstat ack-grep htop skype subversion mysql-server memcached rabbitmq-server \
-    libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev python3-dev build-essential mysql-server python-mysqldb \
-    libmysqlclient-dev python-virtualenv python-pip postgresql-9.4 postgresql-contrib terminator \
+sudo apt-get update && sudo apt-get upgrade -y;
+sudo apt-get install -y tree colordiff sysstat ack-grep htop skype subversion  memcached rabbitmq-server \
+    libgeoip1 libgeoip-dev libmemcached-dev zlib1g-dev libssl-dev python-dev python3-dev build-essential python-mysqldb \
+    libmysqlclient-dev python-virtualenv python-pip postgresql-9.5 postgresql-contrib terminator \
     libpq-dev apache2-utils curl redis-server libxml2-dev  libxslt1-dev
-sudo apt-get install gfortran libblas-dev liblapack-dev python-numpy python-scipy python-matplotlib libxft-dev 
+sudo apt-get install -y gfortran libblas-dev liblapack-dev python-numpy python-scipy python-matplotlib libxft-dev 
+
 sudo apt-get install apache2 php5 php5-mysql php5-xdebug php5-curl php5-memcache php5-mongo
-sudo apt-get nginx-full geoip-database
+sudo apt-get install -y nginx-full geoip-database
 
 #store git password
-sudo apt-get install libgnome-keyring-dev
+sudo apt-get install -y libgnome-keyring-dev
 sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
 git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
 
@@ -32,7 +32,7 @@ git config --global user.email ""
 git config --global user.name ""
 git config --global core.editor vim
 
-sudo apt-get install exuberant-ctags nodejs
+sudo apt-get install -y exuberant-ctags nodejs
 cd ~; git clone  https://github.com/niko83/.vim.git .vim
 cd ~/.vim && git submodule init && git submodule update
 ln -s ~/projects/configs/.vimrc ~/.vim_local
