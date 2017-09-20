@@ -16,6 +16,10 @@ let NERDTreeIgnore=['\~$', '\.AppleDouble$', '\.beam$',
 \'\.pyc$', '\.pyo$', '__pycache__$', '\.Python$', '\..*.rej$',
 \'\.rej$', '\.ropeproject$', '\.svn$', '\.tags$' ]
 
+set wildignore+=*.beam                           " erlang
+set wildignore+=*/target/*                       " scala build
+
+set colorcolumn=99 
 
 au BufNewFile,BufRead *.py setl colorcolumn=80,99
 
