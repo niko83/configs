@@ -7,7 +7,7 @@ nnoremap <Leader>ss :SSave<CR>
 nnoremap <Leader>sr :Unite session<CR>
 nnoremap <Leader>sl :SLoad last.vim<CR>
 
-let g:pymode_lint_ignore = "E501,C0110,C0111,W191,W0312,E711,E126,W0403,E126,D101,D102,D103,D100,D205,D400,D202"
+let g:pymode_lint_ignore = "E501,C0110,C0111,W191,W0312,E711,E126,W0403,E126,D101,D102,D103,D100,D205,D400,D202,D401,D203,F0002,D204"
 let g:pymode_lint_checker = "pylint,pep8,pyflakes,mccabe"
 
 let NERDTreeIgnore=['\~$', '\.AppleDouble$', '\.beam$',
@@ -24,3 +24,9 @@ set colorcolumn=99
 au BufNewFile,BufRead *.py setl colorcolumn=80,99
 
 set tpm=100
+let g:pymode_python = 'python3'
+"let g:pymode_lint_on_write = 0
+"let g:pymode_lint_on_fly = 0
+"let g:pymode_lint = 0
+"let g:pymode_rope_completion = 0
+let g:pymode_folding = 0
