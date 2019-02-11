@@ -119,6 +119,9 @@ transaction-isolation = READ-COMMITTED
 default-time-zone = '+00:00'
 
 
+# wget https://raw.githubusercontent.com/pypa/virtualenv/master/virtualenv_embedded/activate_this.py -O $VIRTUAL_ENV/Scripts/activate_this.py
+
+
 USEFUL
 ======
 git show remote origin
